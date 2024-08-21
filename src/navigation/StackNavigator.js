@@ -5,6 +5,7 @@ import { LinkingOptions } from '@react-navigation/native';
 
 import HomeScreen from '../screens/HomeScreen';
 import OrganizationScreen from '../screens/OrganizationScreen';
+import DetailsScreen from '../screens/DetailsScreen';
 
 const Stack = createStackNavigator();
 
@@ -12,9 +13,9 @@ const linking = {
   prefixes: ['http://localhost:8081', 'myapp://'],
   config: {
     screens: {
-      Home: '',
+      Home: '/',
       Organization: 'organizations/:id',
-      Profile: 'profile/:id',
+      Details: 'details/',
     },
   },
 };
@@ -25,6 +26,7 @@ const StackNavigator = () => {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Organization" component={OrganizationScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
