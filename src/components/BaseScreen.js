@@ -4,9 +4,6 @@ import { View, Text, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 const BaseScreen = ({ title, children }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerText}>{title}</Text>
-      </View>
       <ScrollView style={styles.content}>
         {children}
       </ScrollView>

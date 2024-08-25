@@ -2,11 +2,11 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import BaseScreen from '../components/BaseScreen';
 
-const DetailsScreen = () => {
+const AboutScreen = () => {
   return (
-    <BaseScreen title="Details">
+    <BaseScreen title="About Us">
       <View style={styles.container}>
-        <Text style={styles.text}>This is the Details screen.</Text>
+        <Text style={styles.text}>This is the About Us screen.</Text>
       </View>
     </BaseScreen>
   );
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DetailsScreen;
+export default AboutScreen;
