@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import BaseScreen from '../components/BaseScreen';
 
-const HomeScreen = ({ route, navigation }) => {
+const HomeScreen = ({ navigation }) => {
   return (
     <BaseScreen title="Home Screen">
       <View style={styles.container}>

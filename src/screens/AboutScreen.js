@@ -1,12 +1,17 @@
+// AboutScreen.js
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 import BaseScreen from '../components/BaseScreen';
 
-const AboutScreen = () => {
+const AboutScreen = ({ navigation }) => {
   return (
-    <BaseScreen title="About Us">
+    <BaseScreen title="About Screen">
       <View style={styles.container}>
-        <Text style={styles.text}>This is the About Us screen.</Text>
+        <Text style={styles.text}>This is the About Screen.</Text>
+        <Button
+          title="Back to Home"
+          onPress={() => navigation.navigate('Home')}
+        />
       </View>
     </BaseScreen>
   );
@@ -20,6 +25,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 18,
+    marginBottom: 20,
   },
 });
 
